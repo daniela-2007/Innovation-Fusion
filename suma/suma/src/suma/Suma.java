@@ -26,7 +26,8 @@ public class Suma {
         
         JOptionPane.showMessageDialog(null,"la suma es " + sumar(a,b));
         JOptionPane.showMessageDialog(null,"el promedio es " + promediar(a,b));
-
+        JOptionPane.showMessageDialog(null,"la resta es " + restar(a,b));
+        
     }//fin  main
     
     public static int sumar(int num1, int num2)      
@@ -36,5 +37,11 @@ public class Suma {
       return operacion;
     
     }//fin sumar 
-    
+    public static int restar(int num1, int num2){
+      int resultado;
+      resultado=num1-num2;
+      return resultado;
+
+    }
+
 }// fin clase
