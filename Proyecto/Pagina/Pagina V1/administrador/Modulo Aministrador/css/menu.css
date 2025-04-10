@@ -1,0 +1,28 @@
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu a {
+    display: flex;                 /* Para centrar con flex */
+    align-items: center;          /* Centra verticalmente */
+    justify-content: center;      /* Centra horizontalmente */
+    width: 42.8vh;                  /* Ocupa todo el ancho disponible */
+    height: 50px;                 /* Alto de cada botón */
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-size: 3vh;
+  }
+  
+  .menu a.active {
+    background-color: #E0B253;
+    color: black;
+  }
+  
+  .menu a:hover {
+    background: aliceblue;
+    color: black;
+  }
+  

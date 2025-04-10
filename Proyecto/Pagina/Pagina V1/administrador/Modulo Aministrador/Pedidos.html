@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="main-container">
+    <!-- Menú Lateral -->
+    <aside>
+        <div class="contenedor">
+            <h1>ADMINISTRADOR</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="categorias">
+                        <ul>
+                            <li><a href="Admin.html">Gestionar productos</a></li>
+                            <li><a href="./GestionarProd.html">Inventario</a></li>
+                            <li><a href="./usuario.html">Usuarios</a></li>
+                            <li><a href="./facturas.html">Facturas</a></li>
+                            <li><a href="" disabled>Gestión plataforma</a></li>
+                            <li class="Pedidos"><a href="./chat.html">Chat</a></li>
+                            <li class="Pedidos"><a class="active"  href="./Pedidos.html">Pedidos</a></li>
+                            <li><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    
+    <!-- Contenido de Pedidos -->
+    <nav class="pagpedidos">
+        <div class="menuPed">
+            <a href="./pedidosV2.html">Ver pedidos</a>
+            <a href="./pedidosV2.html">Gestionar devoluciones y cambios</a>
+        </div>
+
+        <!-- Tabla de pedidos -->
+        <table class="verpedidos">
+            <thead>
+                <tr>
+                    <th>IDpedido</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>numero</th>
+                    <th>Productos Adquiridos</th>
+                    <th>precio</th>
+                    td<th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9876543</td>
+                    <td>Pepito</td>
+                    <td>Pepitoperez@gmaill.com</td>
+                    <td>3424561075</td>
+                    <td>2</td>
+                    <td>$60.000</td>
+                    <td class="boton">
+                        <button>Editar</button>
+                        <button>Ver más</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Más productos -->
+            </tbody>
+        </table>
+    </nav>
+</div>
+</body>
+</html>

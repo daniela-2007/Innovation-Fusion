@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chats</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <aside>
+        <div class="contenedor">
+            <h1>ADMINISTRADOR</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="categorias">
+                        <ul>
+                            <li><a href="Admin.html">Gestionar productos</a></li>
+                            <li><a href="./GestionarProd.html">Inventario</a></li>
+                            <li><a href="./usuario.html">Usuarios</a></li>
+                            <li><a class="active" href="./facturas.html">Facturas</a></li>
+                            <li><a href="#" class="disabled-link">Gestión plataforma</a></li>
+                            <li class="Pedidos"><a href="./chat.html">Chat</a></li>
+                            <li class="Pedidos"><a href="Pedidos.html">Pedidos</a></li>
+                            <li><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>  
+
+    <!-- Contenedor de varios chats -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>Chat 1</span>
+        </div>
+        <div class="chat-box">
+            <div class="message received">Hola, ¿cómo estás?</div>
+            <div class="message sent">¡Hola! Estoy bien, ¿y tú?</div>
+            <div class="message received">Todo bien también. 😊</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Escribe un mensaje..."/>
+            <button>Enviar</button>
+        </div>
+    </div>
+
+    <!-- Segundo chat -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>Chat 2</span>
+        </div>
+        <div class="chat-box">
+            <div class="message received">¡Hola! ¿Me escuchas?</div>
+            <div class="message sent">Sí, te escucho bien, ¿y tú?</div>
+            <div class="message received">Todo en orden. 😁</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Escribe un mensaje..."/>
+            <button>Enviar</button>
+        </div>
+    </div>
+
+    <!-- Tercer chat -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>Chat 3</span>
+        </div>
+        <div class="chat-box">
+            <div class="message received">¡Hola! ¿Cómo va todo?</div>
+            <div class="message sent">Todo bien, ¿y tú?</div>
+            <div class="message received">Todo genial, gracias. 😊</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Escribe un mensaje..."/>
+            <button>Enviar</button>
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <aside>
+        <div class="contenedor">
+            <h1>ADMINISTRADOR</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="categorias">
+                        <ul>
+                            <li><a href="Admin.html">Gestionar productos</a></li>
+                            <li><a href="./GestionarProd.html">Inventario</a></li>
+                            <li><a class="active" href="./usuario.html">Usuarios</a></li>
+                            <li><a href="./facturas.html">Facturas</a></li>
+                            <li><a href="#">Gestión plataforma</a></li>
+                            <li class="Pedidos"><a href="./chat.html"disable>Chat</a></li>
+                            <li class="Pedidos"><a href="./Pedidos.html">Pedidos</a></li>
+                            <li><a href="">Cerrar sesion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>  
+    <h2>Usuarios</h2>
+
+    <!-- Tabla de Inventario -->
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Rol</th>
+          <th>Productos Adquiridos</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1234</td>
+          <td>Pepito</td>
+          <td>Pepitoperez@gmaill.com</td>
+          <td>Cliente
+          </td>
+          <td>2</td>
+          <div class="boton">
+            <td>
+                <button>Editar</button>
+                <button>Permisos</button>
+                <button>Eliminar</button>
+            </td>
+          </div>
+        </tr>
+        <!-- Más productos -->
+      </tbody>
+      <tbody>
+        <tr>
+            <th>54321</th>
+            <th>Maria</th>
+            <th>Maria@gmail.com</th>
+            <th>Administrador</th>
+            <th>0</th>
+            <div class="boton">
+              <td><button>Editar</button>
+                <button>Permisos</button>
+                <button>Eliminar</button>
+            </td>
+           </div>
+        </tr>
+      </tbody>
+    </table>
+    <div class="agregar">
+        <button type="button">agregar</button>
+    </div>  
+</body>
+</html>
