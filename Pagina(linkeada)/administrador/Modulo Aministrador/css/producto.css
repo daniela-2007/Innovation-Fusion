@@ -1,0 +1,190 @@
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+  }
+  .formulario div {
+    flex: 1 1 22%; /* Cada campo ocupará aprox. 1/4 del ancho con espacio */
+    min-width: 300px;
+  }
+
+  .Contenedor h1{
+    font-size: 2vw;
+  }
+  .gestion select{
+    border-radius: 4px;
+    width: 10svw;
+    height: 4vh;
+  }
+.gestion p{
+    font-size:  1rem;
+}
+.gestion input{
+    border-radius: 4px;
+    width: 10vw;
+    height: 4vh;
+}
+.codigo input{
+    width: 18vw;
+    height: 4vh;
+}
+.nomProducto {
+   display: block;
+   margin-top:25px ;
+}
+.nomProducto input{
+    width: 18vw;
+    height: 4vh;
+}
+.categoria{
+    display: block;
+    margin-top: 25px;
+}
+.categoria input{
+    width: 18vw;
+    height: 4vh;
+}
+.subcategoria{
+    display: block;
+    margin-top: 25px;
+}
+.subcategoria input{
+    width: 18vw;
+    height: 4vh;
+}
+.marca{
+    display: block;
+    margin-top: 1vw;
+}
+.marca input{
+    width: 18vw;
+    height: 4vh;
+}
+.cantidadProd{
+    display: block;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.cantidadProd input{
+    width: 18vw;
+    height: 4vh;
+}
+.precio{
+    display: block;
+    margin-top: 1vw;
+}
+.precio input{
+    width: 18vw;
+    height: 4vh;
+}
+.preciointerno{
+    display: block;
+    margin-top: 28px;
+}
+.preciointerno input{
+    width: 18vw;
+    height: 4vh;
+}
+
+.descripcion{
+    display: block;
+    width: 22vw;
+    height: 15vh;
+    text-align: start;
+    resize: none;
+    margin-top: 10px;
+}
+.FechaIngreso{
+    display: block;
+    margin-bottom: 10px;
+}
+.guardar button{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    background-color: #E0B253;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox-item input[type="checkbox"] {
+    display: none; /* Ocultamos el checkbox real */
+}
+
+.checkbox-item .checkbox-number {
+    width: 40px ;
+    height: 40px;
+    background-color: #E0B253;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.checkbox-item .checkbox-color {
+    width: 10vw;
+    height: 5vh;
+    background-color: #E0B253;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox-item input[type="checkbox"]:checked + .checkbox-number {
+    background-color: #c49a41; /* Color cuando está marcado */
+}
+
+.number-input {
+    display: none; /* Ocultamos el campo de número por defecto */
+    width: 60px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Mostrar el campo de número cuando el checkbox está marcado */
+.checkbox-item input[type="checkbox"]:checked + .checkbox-number + .number-input {
+    display: inline-block;
+}
+.checkbox-item input[type="checkbox"]:checked + .checkbox-color {
+    background-color: #c49a41; /* Color cuando está marcado */
+}
+
+/* Mostrar el campo de número cuando el checkbox está marcado */
+.checkbox-item input[type="checkbox"]:checked + .checkbox-color + .number-input {
+    display: inline-block;
+}
+.proveedor{
+    display: block;
+    margin-top: 1px;
+}
+.proveedor input{
+    width: 18vw;
+    height: 4vh;
+}
+  
+  
