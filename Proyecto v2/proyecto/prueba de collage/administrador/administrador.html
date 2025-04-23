@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario</title>
+  <link rel="stylesheet" href="./css/dministrador.css">
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <div class="menu">
+    <h2>ADMINISTRADOR</h2>
+
+    <div class="mNivel1">
+      <a class="elegido" href="./administrador.html">Inventario</a>
+      <a href="./gestionPagina.html">Gestión página</a>
+      <a href="./gestionUsuario.html">Gestión usuarios</a>
+    </div>
+
+    <div class="mNivel2">
+      <a href="./chat.html">Chat</a>
+      <a href="./pedidos.html">Pedidos</a>
+    </div>
+
+    <div class="mNivel3">
+      <a href="#">Cerrar sesión</a>
+    </div>
+  </div>
+
+  <!-- Encabezado de la sección Inventario -->
+  <div class="Inventario">
+    <!-- Cabecera fija -->
+    <div class="parteA">
+        <h1>Inventario</h1>
+        <input
+            class="botonA"
+            type="button"
+            value="Registrar"
+            onclick="window.location.href='./registrar.html'"
+        >
+    </div>
+
+    <!-- Tabla de Inventario -->
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Subcategoría</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio de Venta</th>
+                <th>Precio Interno</th>
+                <th>Imagen</th>
+                <th>Marca</th>
+                <th>Fecha de Ingreso</th>
+                <th>Color Disponible</th>
+                <th>Material</th>
+                <th>Género</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ejemplo de una fila de producto -->
+            <tr>
+                <td>001</td>
+                <td>Zapato Deportivo</td>
+                <td>Calzado</td>
+                <td>Deportivo</td>
+                <td>Zapato cómodo y ligero para actividades deportivas.</td>
+                <td>100</td>
+                <td>$50.00</td>
+                <td>$30.00</td>
+                <td><img src="zapato.jpg" alt="Zapato Deportivo" width="50"></td>
+                <td>Nike</td>
+                <td>2025-04-19</td>
+                <td>Rojo</td>
+                <td>Cuero</td>
+                <td>Unisex</td>
+                <td>
+                    <button>Editar</button>
+                    <button class="eliminar">Eliminar</button>
+                </td>
+            </tr>
+            <!-- Agregar más filas de productos aquí -->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

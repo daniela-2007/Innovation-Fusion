@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="./css/dministrador.css">
+</head>
+<body>
+
+    <!-- Menú lateral del administrador -->
+    <div class="menu">
+        <h2>ADMINISTRADOR</h2>
+        <div class="mNivel1">
+            <a class="elegido" href="./administrador.html">Inventario</a>
+            <a href="./gestionPagina.html">Gestión página</a>
+            <a href="./gestionUsuario.html">Gestión usuarios</a>
+        </div>    
+        <div class="mNivel2">
+            <a href="./chat.html">Chat</a>
+            <a href="./pedidos.html">Pedidos</a>
+        </div>
+        <div class="mNivel3">
+            <a href="#">Cerrar sesión</a>
+        </div>
+    </div>
+
+    <!-- Sección de título y botón de salida -->
+    <div class="Inventario">
+        <div class="parteA">
+            <h1>Registrar</h1>
+            <input class="botonA" type="button" value="Salir" onclick="window.location.href='./administrador.html'">
+        </div>
+    </div>
+
+    <!-- Formulario de registro de productos -->
+    <nav class="gestion">
+        <section>
+            <div class="formulario">
+
+                <div class="Contenedor">
+                    <h1>Registrar productos</h1>
+                </div>
+
+                <!-- Elección de tipo de producto -->
+                <div class="eleccion">
+                    <p class="nombrepagina">Producto</p>
+                    <select name="producto" id="producto">
+                        <option value="elegir">Elegir</option>
+                        <option value="zapatos">Zapatos</option>
+                        <option value="bolsos">Bolsos</option>
+                    </select>
+                </div>
+
+                <!-- Campos del producto -->
+                <div class="codigo">
+                    <p>Código del producto</p>
+                    <input type="number" name="codigo" min="0">
+                </div>
+
+                <div class="nomProducto">
+                    <p>Nombre del producto</p>
+                    <input type="text" name="nombre">
+                </div>
+
+                <div class="categoria">
+                    <p>Categoría</p>
+                    <input type="text" name="categoria">
+                    <div class="guardarB">
+                        <input type="text" placeholder="Nombre Categoría" min="0" max="50">
+                        <button type="submit">Agregar Categoría</button>
+                    </div>
+                </div>
+
+                <div class="subcategoria">
+                    <p>Subcategoría</p>
+                    <input type="text" name="subcategoria">
+                    <div class="guardarB">
+                        <input type="text" placeholder="Nombre Subcategoría" min="0" max="50">
+                        <button type="submit">Agregar Subcategoría</button>
+                    </div>
+                </div>
+
+                <div class="marca">
+                    <p>Marca</p>
+                    <input type="text" name="marca">
+                </div>
+
+                <div class="descripcion">
+                    <p>Descripción</p>
+                    <textarea class="descripcion"></textarea>
+                </div>
+
+                <div class="cantidadProd">
+                    <p>Cantidad del producto</p>
+                    <input type="number" name="cantidad" min="0">
+                </div>
+
+                <div class="precio">
+                    <p>Precio de venta</p>
+                    <input type="number" name="precio" min="0" step="0.01">
+                </div>
+
+                <div class="preciointerno">
+                    <p>Precio interno</p>
+                    <input type="number" name="precioInterno" min="0" step="0.01">
+                </div>
+
+                <div class="imagen">
+                    <p>Imagen del producto</p>
+                    <label for="fileInput" class="botonArchivo">Seleccionar imagen</label>
+                    <input type="file" id="fileInput" name="imagen">
+                </div>
+
+                <div class="FechaIngreso">
+                    <p>Fecha de ingreso</p>
+                    <input type="date" name="fechaIngreso">
+                </div>
+
+                <div class="material">
+                    <p>Material</p>
+                    <select name="material" id="material">
+                        <option value="">Selecciona material</option>
+                        <option value="cuero">Cuero</option>
+                        <option value="sintetico">Cuero sintético</option>
+                        <option value="tela">Tela</option>
+                    </select>
+                </div>
+
+                <div class="eleGenero">
+                    <p>Género</p>
+                    <select name="genero" id="gen">
+                        <option value="">Selecciona género</option>
+                        <option value="unisex">Unisex</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="niño">Niño</option>
+                        <option value="niña">Niña</option>
+                    </select>
+                </div>
+
+                <!-- Tallas -->
+                <div class="checkbox-container">
+                    <p>Tallas de zapatos</p>
+                    <div class="guardarB">
+                        <input type="number" placeholder="Talla a agregar" min="0" max="50">
+                        <button type="submit">Agregar talla</button>
+                    </div>
+                    <label class="checkbox-item talla-option">
+                        <input type="checkbox" name="talla" id="opt1">
+                        <span class="checkbox-number">38</span>
+                        <input type="number" class="number-input" placeholder="Cantidad" min="0">
+                    </label>
+                    <label class="checkbox-item talla-option">
+                        <input type="checkbox" name="talla" id="opt2">
+                        <span class="checkbox-number">39</span>
+                        <input type="number" class="number-input" placeholder="Cantidad" min="0">
+                    </label>
+                    <label class="checkbox-item talla-option">
+                        <input type="checkbox" name="talla" id="opt3">
+                        <span class="checkbox-number">40</span>
+                        <input type="number" class="number-input" placeholder="Cantidad" min="0">
+                    </label>
+                </div>
+
+                <!-- Colores -->
+                <div class="checkbox-container">
+                    <p>Colores</p>
+                    <div class="guardarB">
+                        <input type="color">
+                        <input type="text" placeholder="Nombre Color">
+                        <button type="submit">Agregar color</button>
+                    </div>
+                    <label class="checkbox-item talla-option">
+                        <input type="checkbox" name="color" id="color1">
+                        <span class="checkbox-color">Azul</span>
+                        <input type="number" class="number-input" placeholder="Cantidad" min="0">
+                    </label>
+                    <label class="checkbox-item talla-option">
+                        <input type="checkbox" name="color" id="color2">
+                        <span class="checkbox-color">Negro</span>
+                        <input type="number" class="number-input" placeholder="Cantidad" min="0">
+                    </label>
+                    <label class="checkbox-item talla-option">
+                        <input type="checkbox" name="color" id="color3">
+                        <span class="checkbox-color">Blanco</span>
+                        <input type="number" class="number-input" placeholder="Cantidad" min="0">
+                    </label>
+                </div>
+
+                <!-- Botón para guardar -->
+                <div class="guardar">
+                    <button type="submit">Guardar producto</button>
+                </div>
+
+            </div>
+        </section>
+    </nav>
+
+</body>
+</html>
